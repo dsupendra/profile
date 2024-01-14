@@ -1,0 +1,115 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+    
+    header {
+        background-color: #080808;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        /* Responsive adjustments */
+        flex-wrap: wrap;
+    }
+    
+    .logo a {
+        color: White;
+        font-size: 24px;
+        text-decoration: none;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    /* Style the navigation links on hover */
+    nav a:hover {
+        text-decoration: underline;
+    }
+    
+    /* Media queries for responsiveness */
+    @media screen and (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .logo {
+            margin-bottom: 10px;
+        }
+    
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        nav li {
+            margin: 5px 0;
+        }
+    }
+
+    .projects-showcase {
+        background: linear-gradient(45deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background.jpg) no-repeat center;
+        background-size: cover;        
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .projects-showcase h2 {
+        color: White; /* light text color on Dark background */
+    }
+    
+    .project {
+        max-width: 400px;
+        margin: 20px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+    }
+    
+    .project img {
+        max-width: 100%;
+        height: 250px;
+        border-radius: 8px;
+    }
+    
+    .project h3 {
+        color: #000000; 
+        margin-top: 10px;
+    }
+    
+    .project p {
+        color: white; /* Dark gray text color */
+    }
+    
+    .project a {
+        display: inline-block;
+        background-color: #555; /* Dark gray button background color */
+        color: white;
+        padding: 10px 20px;
+        margin-top: 15px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .project a:hover {
+        background-color: #333; /* Slightly darker on hover */
+    }
